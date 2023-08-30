@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Thực hành tạo form </title>
+</head>
+
+<body>
+    <h2>Create Account</h2>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Registration information</legend>
+            <label for="First name"><strong>First name<sup>*</sup>:</strong></label>
+            <input type="text" name="first name" placeholder="enter your first name">
+            <label for="Last name"><strong>Last name:</label>
+            <input type="text" name="last name" placeholder="enter your last name"><br>
+            <label for="Email"><strong>Email<sup>*</sup>:</strong></label>
+            <input type="email" id="email" placeholder="enter your email">
+            <label for="Phone"><strong>Phone<sup>*</sup>:</strong></label>
+            <input type="number" name="number" placeholder="enter your phone number"><br>
+        </fieldset>
+        <fieldset>
+            <legend> Personal information</legend>
+            <label for="gender"> Gender:</label>
+            <input type="radio" name="male"> Male
+            <input type="radio" name="male"> Female
+            <label for="Hobbies">Hobbies:</label>
+            <input type="checkbox"> Music
+            <input type="checkbox"> Sports
+            <input type="checkbox"> Travel
+            <input type="checkbox"> Movies<br>
+            <label for="Source of Income"> Source of Income:</label>
+            <select>
+                <option value="employed">employed</option>
+            </select>
+            <label for="Income">Income</label>
+            <input type="range" min="1" max="100" ><br>
+            <label for="Age">Age:</label>
+            <input type="text" name="age" value="18">
+            <label for="Profile Picture">Profile Picture:</label>
+            <input type="file"><br>
+            <label for="Birthday">Birthday:</label>
+            <input type="date" name="bday">
+            <label for="address">Address:</label>
+            <input type="text"> <textarea  rows="1" cols="3"></textarea><br>
+            <label for="Bio">Bio:</label><br>
+            <texarea rows="25" cols="30">
+            </texarea>
+        </fieldset>
+    </form>
+    <button> Create </button>
+    <input type="reset" value="reset">
+</body>
+</html>
