@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("hãy nhập nội dung vào")
+        let arr = a.split(" ");
+        console.log(arr.reverse());
+        let result = true;
+        for (let i = 0; i < arr.length / 2; i++) {
+            if (arr[i!= arr.length/2] !== arr[arr.length - 1 - i]) {
+               console.log("đây là chuỗi đối xứng");
+            }else {console.log("đây không phải là chuỗi đối xứng");}
+        }
+    </script>
+</body>
+</html>

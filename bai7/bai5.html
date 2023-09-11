@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let a=+prompt("nhập điểm bài kiểm tra");
-        let b=+prompt("nhập điểm thi giữa kỳ");
-        let c=+prompt("nhập điểm thi cuối kỳ");
-        let i=(a+b+c)/3;
+        let a = +prompt("nhập điểm bài kiểm tra");
+        let b = +prompt("nhập điểm thi giữa kỳ");
+        let c = +prompt("nhập điểm thi cuối kỳ");
+        let i = (a + b + c) / 3;
         switch (true) {
-            case i>=8 && i<=10:
+            case i >= 8 && i <= 10:
                 console.log("học lực giỏi");
                 break;
-            case i>=6.5 && i<=7.9:
+            case i >= 6.5 && i <= 7.9:
                 console.log("học lực khá");
                 break;
-            case i>=5 && i<=6.4:
+            case i >= 5 && i <= 6.4:
                 console.log("học sinh trung bình");
                 break;
-            case i>=3.5 && i<=4.9:
+            case i >= 3.5 && i <= 4.9:
                 console.log("học sinh yếu");
                 break;
             default:
@@ -30,4 +32,5 @@
         } 
     </script>
 </body>
+
 </html>
