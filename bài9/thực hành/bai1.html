@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // <!-- viết c.trinh cho người dùng nhập 5 số nguyên vào 1 mảng.Nếu không phải 
+    // số nguyên thì yêu cầu nhập lại  -->
+    let arr=[];
+    while (arr.length<5) {
+        let number=+prompt("mời bạn nhập số nguyên")
+
+        if (Number.isInteger(number)) {
+            arr.push(number);
+        }
+        console.log(arr);
+    }
+    </script>
+    
+</body>
+</html>
