@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Viết chương trình tạo hàm để kiểm tra xem năm người dùng nhập vào có phải năm nhuận không
+        let n=+prompt("nhập năm vào")
+        function  year(n) {
+            if(n%4==0){
+            console.log(`năm ${n} là năm nhuận`);
+        }else{
+            console.log(`năm ${n} không phải là năm nhuận`);
+        }
+        }
+        year(n)
+    </script>
+</body>
+</html>

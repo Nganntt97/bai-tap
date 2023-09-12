@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // viết hàm nhận vào môjt số, kiểm tra xem số đó có phải nguyên dương không
+        // nếu đúng thì trả về True,sai thì false
+        let n=+prompt("nhập vào một số nguyên dương ")
+        function nguyenDuong(n) {
+         let result =Number.isInteger(n) && n>=0;
+         return result
+        }
+        console.log(nguyenDuong(n));
+    </script>
+</body>
+</html>

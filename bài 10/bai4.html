@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+        // nếu ký tự số hàm trả về TRUE ngược lại sẽ trả về FALSE
+
+        let text = prompt("hãy nhập vào một ký tự bất kỳ ");
+        function insert(text) {
+            let result = !Number.isNaN(text);
+            return result ;
+        }
+        console.log(insert(text));
+
+    </script>
+</body>
+
+</html>

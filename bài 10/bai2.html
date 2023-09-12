@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // viết hàm tính diện tính,chu vi hình tròn.
+        // Gọi hàm vừa xây dựng được
+        function result(){
+            let banKinh=+prompt("nhập bán kính hình tròn");
+            const PI=3.14;
+            let dienTich =PI * banKinh**2  ;
+            let chuVi= 2* banKinh * PI;
+            console.log(`diện tích hình tròn là ${dienTich}`);
+            console.log(`chu vi hình tròn là ${chuVi}`);
+        }
+        result()
+
+    </script>
+</body>
+</html>

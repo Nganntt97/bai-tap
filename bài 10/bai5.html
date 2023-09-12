@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // viết hàm nhận 3 số nguyên bất kỳ,t
+        // trả về số nguyên có giá trị nhỏ nhất
+        let a = +prompt("hãy nhập vào số nguyên a bất kỳ");
+        let b = +prompt("hãy nhập vào số nguyên b bất kỳ");
+        let c = +prompt("hãy nhập vào số nguyên c bất kỳ");
+        function result(a, b, c) {
+            let minValue = a;
+            if (b < a && b < c) {
+                minValue = b;
+            }
+            if (c < a && c  < b); {
+                minValue = c;
+            }
+            return minValue;
+        }
+        console.log(`giá trị nhỏ nhất là `+result(a, b, c));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // viết hàm truyền vào mảng số nguyên bất kỳ,sau đó đảo ngược mảng số nguyên đó
+        let string=prompt("nhập mảng số nguyên bất kỳ");
+        function result (string) {
+            let param = string.split(" ");
+             param.reverse();
+             let newString=param.join("");
+             return newString;
+        }
+        console.log(`mảng sau khi đảo ngược là`+ result(string));
+    </script>
+</body>
+</html>
