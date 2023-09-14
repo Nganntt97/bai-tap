@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Nhập vào một chuỗi là 5 chữ số nguyên,
+        //  tìm số lớn nhất và duy nhất trong 5 số đó.
+
+        let number=[6,3,5,2,6];
+        let arr=number.sort((a,b)=>{
+            return b-a;
+        })
+        console.log(arr);
+        function result(arr) {
+            if (arr[0]!=arr[1]){
+            return arr[0];
+        }else{
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] !==arr[i+1] && arr[i+1] !==arr[i+2])
+                return arr[i+1];
+            }
+        }   
+        }
+        console.log(`số lớn nhất và duy nhất trong 5 số là ${result(arr)}`);
+
+        
+       
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
