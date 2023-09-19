@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cat={
+            name: "Tom",
+            age:2,
+            run:(mouse)=>{
+                console.log(`đang bắt chuột tên là ${mouse}`);
+            },
+
+        }
+        cat.run("jerry")
+
+        function Student(name,country){
+            this.name=name;
+            this.country=country;
+        }
+        let student1 = new Student ("Jen","usa");
+        let student2= new Student ("tom","japan");
+        let student100= new Student ("henry","vietnam")
+        console.log("studen1",student1);
+        console.log("student100",student100);
+       
+    </script>
+</body>
+</html>
