@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgmain {
+            text-align: center;
+
+        }
+
+        #image {
+            height: 300x;
+            width: 300px; 
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- tạo  1 div chứa 1 cái ảnh khi click vào ảnh đó sẽ thay đổi thành ảnh khác. -->
+    <div class="imgmain">
+        <img id="image" onclick="changeimg()"
+            src="https://hoavily.com/uploads/file/Hoavily-%20bo%20hoa%20hien%20dai%202.jpg" 
+            alt="img1">
+
+    </div>
+    <script>
+        let img = ['https://hoatuoi9x.com/wp-content/uploads/2021/08/e_3eb4b7c4bf6e42128d9c9b526c45711c_1024x1024.jpg',
+            'https://hoavily.com/uploads/file/Hoavily-%20bo%20hoa%20hien%20dai%202.jpg',
+            'https://down-vn.img.susercontent.com/file/d106304ebfe72887ccf0892be9384e8a']
+        let count = 0;
+        function changeimg() {
+            count++;
+            console.log(count);
+            if (count == 3) {
+                count = 0;
+            }
+            document.getElementById("image").src = img[count];
+        }
+
+        </script>
+
+
+</body>
+
+</html>

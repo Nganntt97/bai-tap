@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tạo giao diện gồm ô input và nút button (save)
+        khi người dùng nhập nội dung vào ô input nhấn (save) sẽ lưu vào 1 cái mảng -->
+
+    <input id="text" type="text" placeholder="hãy nhập vào">
+    <button class="container"> Save</button>
+    <script>
+        let text= document.getElementById("text")[0];
+        let save=document.getElementsByClassName("container")[0];
+        save.addEventListener('click',() => {
+            let array=[];
+            let resutl=text.value;
+            array.push(result);
+            console.log(array);
+        })
+
+    </script>
+</body>
+</html>
