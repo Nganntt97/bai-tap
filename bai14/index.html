@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            height: 650px;
+            margin: 10px auto;
+            background-color: rgb(67, 67, 167);
+            text-align: center;
+        }
+
+        .container h3 {
+            color: palevioletred;
+            padding: 20px;
+        }
+
+        .container__main {
+            width: 1000px;
+            height: 550px;
+            background-color: white;
+            margin: 0px auto;
+            padding-top: 10px;
+        }
+
+        .container__title2 {
+            margin: 20px 0px;
+        }
+
+        .container__job__input {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 20px auto 0px;
+            width: 900px;
+        }
+
+        .container__job__input input {
+            flex-grow: 1;
+            border: none;
+            padding: 20px;
+            outline: none;
+        }
+
+        .container__job__input button {
+            background-color: rgb(149, 156, 156);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 30px;
+            cursor: pointer;
+            margin: 0px 20px;
+        }
+
+        .container__main__job {
+            margin: 0 auto;
+            width: 900px;
+            height: 400px;
+            overflow-y: auto;
+        }
+
+        .container__sub__job {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .edit {
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        .close {
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__title1">
+            <h3>Bài tập to do list</h3>
+        </div>
+        <div class="container__main">
+            <div class="container__title2">
+                <h4>Danh sách các việc cần làm trong năm</h4>
+            </div>
+            <div class="container__job">
+                <div class="container__job__input">
+                    <input id="text" type="text" placeholder="Thêm công việc . . .">
+                    <button class="container__button">Save</button>
+                </div>
+            </div>
+            <div class="container__main__job">
+                <p>Chưa có công việc nào ...</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let jobs = [];
+        let editing = -1;
+        clickButton = document.getElementsByClassName('container__button')[0];
+        clickButton.addEventListener('click', () => {
+            text = document.getElementById('text').value;
+            jobs.push({ text: text, backgroundColor: jobs.length % 2 == 0 ? 'rgb(211,204,204)' : 'bisque' })
+            renderJobs();
+        })
+        renderJobs = () => {
+            let result = '';
+            for (let i = 0; i < jobs.length; i++) {
+                result += `<div style="background-color: ${jobs[i].backgroundColor};" class="container__sub__job">
+        <div class="container__job__main">
+        <p>${jobs[i].text}</p>
+    </div>
+        <div class="container__job__fix">
+                    <span onclick ="clickEdit(${i})" class="material-symbols-outlined edit">
+                        edit_square
+                    </span>
+                    <span onclick ="clickClose(${i})" class="material-symbols-outlined close">
+                        close
+                    </span>
+                </div>
+                </div>
+        `
+                document.getElementById('text').value = '';
+
+            }
+            document.getElementsByClassName('container__main__job')[0].innerHTML = result
+        }
+        clickClose = (i) => {
+            jobs.splice(i, 1)
+            renderJobs();
+        }
+        clickEdit = (i) => {
+            document.getElementById('text').value = document.querySelectorAll('.container__job__main p')[i].textContent;
+            document.querySelectorAll('.container__job__main p')[i].textContent = '';
+            clickButton.addEventListener('click', () => {
+                text = document.getElementById('text').value;
+                document.querySelectorAll('.container__job__main p')[i].textContent = text;
+            })
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: block;
+    padding: 20px;
+
+}
+header img{
+    width: 600px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.signup{
+    font-family: sans-serif;
+    border: 1px solid  0px;
+    background-color:  #c6ebd5;
+    align-items: center;
+    justify-content: center;
+    width:430px ;
+    height: 450px;
+    padding: 20px;
+    margin: 50px;
+    box-shadow: 0 2px 4px 0;
+}
+.signup legend {
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+#email{
+    width: 350px;
+    height: 40px;
+    box-sizing: inherit;
+}
+#name{
+    width: 350px;
+    height: 40px;
+    box-sizing: inherit;
+}
+#password{
+    width: 350px;
+    height: 40px;
+    box-sizing: inherit;
+}
+#confirmPassword{
+    width: 350px;
+    height: 40px;
+    box-sizing: inherit;
+}
+button{
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    background-color: seagreen ;
+    color: aliceblue;
+    border: 0px solid none;
+    margin-top: 10px;
+}
+.signup p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+footer{
+    display: block;
+    margin-top: 200px;
+    padding: 0 10px 10px 10px;
+}
+footer img{
+    width: auto;
+    height: 160px;
+    align-items: center;
+}
+    

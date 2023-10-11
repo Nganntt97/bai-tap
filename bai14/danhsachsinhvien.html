@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 300px;
+            background-color: blueviolet;
+        }
+        label{
+            display: block;
+            width: 100px;
+            margin: 10px;
+        }
+        button{
+            margin: 10px;
+        }
+        tr,td{
+            text-align: center;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <label for="">Ten sinh vien</label>
+    <input id="name" type="text"> <br>
+    <label for="">Dia chi</label>
+    <input id="address" type="text"><br>
+    <label for="">Email</label>
+    <input id="email" type="text"><br>
+    <button onclick="save()">Save</button>
+</div>
+<div class="table">
+    <table border="1px">
+        <caption>quan ly sinh vien</caption>
+        <thead>
+            <th>STT</th>
+            <th>Ten</th>
+            <th>Dia chi</th>
+            <th>Email</th>
+            <th>Action</th>
+        </thead>
+        <tbody id="tbody">
+            <!-- <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Le Khanh Linh
+                </td>
+                <td>
+                    Thanh Hoa
+                </td>
+                <td>
+                    Khanhlinh@gmail.com
+                </td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr> -->
+
+        </tbody>
+    </table>
+</div>
+    <script>
+        function randomID() {
+            let id = Math.floor(Math.random() * 1000000000);
+            return id
+        }
+        let students = [];
+        function save() {
+            let nameValue = document.getElementById('name').value;
+            let addressValue = document.getElementById('address').value;
+            let emailValue = document.getElementById('email').value
+            let studentInfo = {
+                name: nameValue,
+                address: addressValue,
+                email: emailValue,
+                // id: randomID()
+            }
+            students.push(studentInfo);
+            showStudent()
+            console.log(students);
+        }
+        function showStudent() {
+            let text = '';
+            for (let i = 0; i < students.length; i++) {
+                text +=
+                     `<tr>
+                    <td>
+                        ${i+1}
+                    </td>
+                    <td>
+                        ${studens[i].name}
+                    </td> 
+                    <td>
+                        ${students[i].address}
+                    </td>
+                    <td>
+                       ${students[i].email}
+                    </td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                    </tr>`
+            }
+            document.getElementById("tbody").innerHTML=text;
+
+
+        }
+
+    </script>
+
+
+    <!-- cách nhúng bootstrap
+cách dùng break point 
+hệ thống lưới trong bootastrap-
+responsive->
+</body>
+
+</html>

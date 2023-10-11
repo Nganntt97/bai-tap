@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レバ刺しの通販・お取り寄せ | さしみーと Meフードシステム</title>
+    <link rel="stylesheet" href="../style/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .error{
+            display:none;
+            color:red;
+        }
+        .password-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .eye-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .eye-icon.active .fa-eye-slash {
+            display: none;
+        }
+
+        .eye-icon.active .fa-eye {
+            display: block;
+            color: #007cff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <h4>職歴40年のハム職人が作る絶品レバ刺しの通販・お取り寄せ</h4>
+            <img src="../assets/header_002.png" alt="">
+        </header>
+        <main>
+            <form id="myForm" class="signup">
+                <legend>
+                    <h3>登録</h3>
+                </legend>
+                <label for="">Eメール</label> <br>
+                <input required type="email" id="email"> <br>
+                <label for="">ユーザー名</label> <br>
+                <input required type="text" id="name"><br>
+
+                <label for="">パスワード</label> <br>
+                <div class="password-container">
+                    <input required type="password" id="password">
+                    <span id="toggle-password" class="eye-icon">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+                <br>
+                <label for="">パスワード確認</label> <br>
+                <input required type="password" id="confirmPassword"> <br>
+
+                <button type="submit">登録</button>
+                <p>アカウントを持っていますか？ <a href="./loginpage.html">ログイン</a> </p>
+            </form>
+
+        </main>
+        <footer>
+            <img class="img-footer" src="../assets/footer.png" alt="">
+        </footer>
+        <script src="../js/signup.js"></script>
+       
+    </body>
+
+</html>

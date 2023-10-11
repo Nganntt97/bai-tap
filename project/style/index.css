@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-primary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 8px;
+}
+.header-left {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+     
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: black;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    
+}
+.header-right a{
+    color: black;
+}
+.count{
+    display:inline-block;
+    background-color:red;
+    color:aliceblue;
+    text-align: center;
+    line-height: 20px;
+    width:20px;
+    height: 20px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+
+.header img{
+    height: 40px;
+    width: 600px;
+}
+
+a{
+    text-decoration: none;
+    color:aliceblue
+}
+.menu{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color :seagreen;
+    color: aliceblue;
+    height: 50px;
+}
+.search{
+    width: 300px;
+    border: none;
+    
+
+}
+.search-box{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carouselExampleIndicators{
+    padding:10px 150px ;
+}
+
+.content{
+    color: seagreen;
+    background-color: white;
+    font-size: 30px;
+    border: 2px solid seagreen;
+    border-radius: 1px;
+    padding: 8px;
+    margin: 20px 0;
+
+}
+.product-list{
+   padding: 32px 3%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+.product-list img {
+    height: 350px;
+    background-color: rgba(255, 254, 254, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.product-item p{
+  color: black;
+
+}
+.text{
+    padding-top: 20px;
+}
+.product-item p img{
+    height: 1000px;
+    background-color: rgba(255, 254, 254, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+footer img {
+    width: 1450px;
+    height: 150px;
+    align-items: center;
+}

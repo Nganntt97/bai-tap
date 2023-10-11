@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        ul li {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid black;
+            line-height: 50px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="score">
+        <!-- <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li> -->
+    </ul>
+    <!-- <p>Thuy Ngan
+        <ul>
+            <li>Khanh</li>
+            <li>Nam</li>
+        </ul>
+    </p> -->
+    <p id="tille"></p>
+    <input id="text" type="text">
+    <button onclick="save()">send</button>
+
+    <!-- hien thi comment-->
+    <div class="container">
+        <ul>
+            <li>7</li>
+            <li>good</li>
+        </ul>
+        <ul>
+            <li>5</li>
+            <li>good</li>
+        </ul>
+    </div>
+
+    <script>
+        let tille = document.getElementById('tille')
+        // tille.innerHTML = `<ul>
+        //     <li>
+        //         khanh
+        //     </li>
+        //     <li>
+        //         nam
+        //         </li>
+        //         </ul>`
+        let text = "";
+        // for (let i=1;i<=10;i++)
+        // text+= '<li>nam</li>'
+        for (let i = 1; i <= 10; i++) {
+            text += `<li onclick="choose(${i})">${i}</li>`;
+        }
+        document.getElementById('score').innerHTML = text;
+        let score1;
+        function choose(number) {
+            console.log(number);
+            score1 = number;
+            // dung de doi mau
+            let result = document.getElementsByTagName('li');
+            for (let i = 0; i < result.length; i++) {
+                if (number - 1 == i) {
+                    // result[i].classList.add('pick');
+                    result[i].style.backgroundColor = 'pink'
+
+                } else {
+                    // result[i].classList.remove('pick')
+                    result[i].style.backgroundColor = 'white'
+                }
+            }
+        }
+        // khai bao mang de chua nd comment
+        let comments = [];
+        function save() {
+            console.log("haha");
+            // lấy giá trị 0 input của người dùng nhập vào
+            let text = document.getElementById('text').value;
+            let info = {
+                content: text,
+                score: score1,
+                id: Math.floor(Math.random()*45676967)
+                // Math.floor để làm tròn so vd:3,65=>3
+                // Math.random de lay mot bat ky tu 0 den 1
+            }
+            comments.push(info)
+            console.log(comments);
+        }
+
+        // function hiển thị nd comment
+        function renderComment() {
+
+
+        }
+
+
+
+
+        // function sayHello(){
+        //     console.log("hello mọi người");
+        // }
+
+    </script>
+</body>
+
+</html>
