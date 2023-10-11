@@ -3,9 +3,67 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    padding-top: 10px;
+}
+.container img{
+    width: 600px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.page-title{
+    border: 1px;
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 5px;
+}
+.table{
+    margin: 50px 200px;
+    justify-content: center;
+    border: 1px solid black;
+}
+.table-dark{  
+    font-size: 20px;
+    font-style:inherit;
+
+}
+.paymentButton{
+    display: flex;
+    justify-content: center;
+
+}
+.payment{
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: seagreen;
+    color: aliceblue;
+    margin: 10px;
+    border: 1px solid none;
+    justify-content: center;
+    
+    
+}
+.shopping{
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    background-color: seagreen;
+    color: aliceblue;
+    border: 1px solid none;
+    
+}
 thead{
  width: 20px;
  background-color: seagreen;
  color: aliceblue;
- 
+}
+
+footer img {
+    margin-top: 30px;
+    width: 1450px;
+    height: 150px;
+    align-items: center;
 }

@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/cart.css">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        tr,td{
+
+        tr,
+        td {
             text-align: center;
             padding: 15px;
         }
     </style>
 </head>
 
+
 <body>
-    <table border="1">
+    <div class="container">
+        <h3>職歴40年のハム職人が作る絶品レバ刺しの通販・お取り寄せ</h3>
+        <img src="../assets/header_002.png" alt="logo">
+    </div>
+    <div class="page-title">
+        <h2>ショッピングカード</h2>
+    </div>
+    <div class="main">
+        <table border="1" class="table">
+            <thead class="table-dark">
+                <tr>
+                    <td>順番</td>
+                    <td>写真</td>
+                    <td>Id</td>
+                    <td>商品名</td>
+                    <td>小計</td>
+                    <td>数量</td>
+                    <td>合計</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <div class="paymentButton">
+            <td colspan="8"><button onclick="payment()" class="payment">レジに進む</button>
+                <button onclick="viewMore()" class="shopping">買い物を続ける</button>
+            </td>
+            </tr>
+        </div>
+
+    </div>
+    <!-- <table border="1">
         <thead>
             <tr>
                <td>順番</td>
                <td>Img</td>
                <td>id</td>
                <td>商品名</td>
-               <td>価格</td>
+               <td>小計</td>
                <td>数量</td>
                <td>合計</td>
                <td>操作</td>
@@ -46,8 +82,8 @@
                 </td>
                 <td>34450</td>
                 <td>取消す</td>
-            </tr>
-            <!-- <tr>
+            </tr> -->
+    <!-- <tr>
                 <td>2</td>
                 <td><img src="../assets/ギュレバ.jpeg" alt=""></td>
                 <td>123456</td>
@@ -62,7 +98,7 @@
                 <td>4万9千</td>
                 <td>取消す</td>
             </tr> -->
-            <!-- <tr>
+    <!-- <tr>
                 <td>3</td>
                 <td><img src="../assets/yuke.jpeg" alt=""></td>
                 <td>3456</td>
@@ -89,7 +125,7 @@
                 </td>
                 <td>24570</td>
                 <td>取消す</td> -->
-            <!-- </tr>
+    <!-- </tr>
             <tr>
                 <td>5</td>
                 <td><img src="../assets/5setto.jpeg" alt=""></td>
@@ -105,10 +141,14 @@
                 <td>取消す</td>
             </tr> -->
 
-        </tbody>
+    </tbody>
     </table>
     <script src="../js/cartrender.js">
-        
+
     </script>
+    <footer>
+        <img src="../assets/footer.png" alt="">
+    </footer>
 </body>
+
 </html>
