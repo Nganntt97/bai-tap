@@ -11,35 +11,35 @@ let productList = [
         name: "黒薩摩鳥ささみ生ハム",
         price: 698,
         id:12345,
-        src: "../project/assets/sasami.jpeg",
+        src: "./assets/sasami.jpeg",
         stock: 50,
     },
     {
         name: "牛レバーハム",
         price: 819,
         id:123456,
-        src: "../project/assets/ギュレバ.jpeg",
+        src: "./assets/ギュレバ.jpeg",
         stock: 50,
     },
     {
         name: "牛ユッケ生ハム",
         price: 819,
         id:3456,
-        src: "../project/assets/yuke.jpeg",
+        src: "./assets/yuke.jpeg",
         stock: 50,
     },
     {
         name: "牛とろタルタル",
         price: 819,
         id:456767,
-        src: "../project/assets/taru.jpeg",
+        src: "./assets/taru.jpeg",
         stock: 50,
     },
     {
         name: "さしみーと５種セット",
         price: 3500,
         id:767897,
-        src: "../project/assets/5setto.jpeg",
+        src: "./assets/5setto.jpeg",
         stock: 50,
     }
 ]
@@ -100,7 +100,7 @@ function addToCart(producId) {
                             id: item.id,
                             name: item.name,
                             price: item.price,
-                            // src: item.src,
+                            src: item.src,
                             quantity: 1,
                             stock: item.stock
                         }
