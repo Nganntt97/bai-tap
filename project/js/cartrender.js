@@ -70,7 +70,7 @@ function renderCart(){
                 let text = '';
                 for (let j = 0; j < users[i].cart.length; j++) {
                     total += users[i].cart[j].price * users[i].cart[j].quantity
-                    text += `<tr>
+                    text += `<tr scope="row">
                     <td>${j + 1}</td>
                     <td>
                     <img src='.${users[i].cart[j].src}'  class="rounded"
@@ -84,7 +84,7 @@ function renderCart(){
                         <button class="btn btn-primary btn-sm" onclick ="increase(${users[i].cart[j].id})">+</button>
                     </td>
                     <td>${(users[i].cart[j].price * users[i].cart[j].quantity)}円(税込)</td>
-                    <td><button class="btn btn-danger" onclick = "popup(${users[i].cart[j].id})">取消す</button></td>
+                    <td><button class="btn btn-danger" onclick = "popup(${users[i].cart[j].id})">削除</button></td>
                 </tr>`
                 }
                 document.getElementById('tbody').innerHTML = `

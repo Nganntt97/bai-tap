@@ -9,23 +9,28 @@
 .container img{
     width: 600px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .page-title{
     border: 1px;
     background-color: whitesmoke;
     margin: 10px;
-    padding: 5px;
+    padding: 4px;
 }
-.table{
+.color{
+    color: --bs-danger-rgb;
+
+}
+/* .table{
     margin: 50px 200px;
     justify-content: center;
-    border: 1px solid black;
-}
+    border: 1px solid black; */
+
 .table-dark{  
     font-size: 20px;
     font-style:inherit;
+    background-color: seagreen;
 
 }
 .paymentButton{
@@ -33,12 +38,7 @@
     justify-content: center;
 
 }
-.payment{
-    font-size: 20px;
-    width: 150px;
-    height: 50px;
-    background-color: seagreen;
-    color: aliceblue;
+.btn btn-success btn-lg{
     margin: 10px;
     border: 1px solid none;
     justify-content: center;
